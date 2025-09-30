@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
- const MONGO_URI = "mongodb://localhost:27017/ShopManage"
+ const MONGO_URI = "mongodb+srv://abichalshukla9963_db_user:shop@cluster0.qztbgwi.mongodb.net/"
 const connectDB = async () => {
   try {
     await mongoose.connect(MONGO_URI, {
@@ -12,4 +12,5 @@ const connectDB = async () => {
     process.exit(1);
   }
 };
+
 module.exports = connectDB;
